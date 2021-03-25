@@ -29,7 +29,5 @@ app.use(router.routes()).use(router.allowedMethods());
 const port = PORT || 4000; // PORT 값이 설정되어있지 않다면 4000 을 사용합니다.
 
 app.listen(port, () => {
-  console.log("heurm server is listening to port " + port);
+  console.log("server is listening to port " + port);
 });
-
-// test
