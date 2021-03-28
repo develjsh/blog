@@ -77,7 +77,7 @@ const AuthFrom = ({ type, form, onChange, onSubmit }) => {
           placeholder="비밀번호"
           type="password"
           onChange={onChange}
-          value={form.passwordConfirm}
+          value={form.password}
         />
         {type === 'register' && (
           <StyledInput
@@ -85,6 +85,7 @@ const AuthFrom = ({ type, form, onChange, onSubmit }) => {
             name="passwordComfirm"
             placeholder="비밀번호확인"
             type="password"
+            value={form.passwordConfirm}
           />
         )}
 
