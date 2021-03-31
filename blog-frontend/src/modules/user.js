@@ -13,6 +13,7 @@ const [CHECK, CHECK_SUCCESS, CHECK_FAILURE] = createRequestActionTypes(
 
 export const tempSetUser = createAction(TEMP_SET_USER, (user) => user);
 export const check = createAction(CHECK);
+
 const checkSaga = createRequestSaga(CHECK, authAPI.check);
 export function* userSaga() {
   yield takeLatest(CHECK, checkSaga);
